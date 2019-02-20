@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>박스모델</title>
+	<style>
+        .left-img{
+            float:left;
+            margin-right:15px;
+        }
+        .box1{
+            padding:20px;
+            margin-right: 10px;
+            background: #ffd800;
+            float:left;
+        }
+        .box2{
+            background: #0094ff;
+            padding: 20px;
+            margin-right: 10px;
+            float: left;
+        }
+        .box3{
+            background: #00ff21;
+            padding:20px;
+            float: left;
+        }
+        .box4{
+            background: #ffffff;
+            padding: 20px;
+            float: right;
+            border: 1px solid black;
+        }
+        .box5{
+            float:left;
+            padding:20px;
+            margin-right: 10px;
+            background: #ffd800;
+        }
+        .box6{
+            float:left;
+            padding:20px;
+            margin-right: 10px;
+            background:#ffffff;
+        }
+        .box7{
+            background: #00ff21;
+        }
+        .box8{
+            clear: both;
+            margin-top: 50px;
+            background: #0094ff;
+        }
+        div#wrapper{
+            position: relative;
+        }
+        #b1{
+            z-index: 1;
+            background: #0094ff;
+            padding:20px;
+            margin-right: 10px;
+            float: left;
+        }
+        #b2{
+            z-index: 3;
+            background: #00ff21;
+            padding:20px;
+            margin-top: 20px;
+            margin-left: -20px;
+            float: left;
+        }
+        #b3{
+            z-index: 1;
+            background: #ffd800;
+            padding:20px;
+            margin-left: -10px;
+            float: left;
+        }
+        .ttt1{
+            width:30%;
+            height:80px;
+            padding:25px, 25px;
+            float: left;
+            border: 1px soild black;
+            background: #ccc;
+        }
+        .ttt2{
+            width:60%;
+            height:80px;
+            padding:25px, 25px;
+            float: left;
+            margin-left:30px;
+            background: #ccc;
+            border: 1px soild black;
+        }
+        .ttt3{
+            width:92%;
+            height:80px;
+            padding:25px, 25px;
+            margin-top:100px;
+            clear: both;
+            background: #ccc;
+            border: 1px soild black;
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="images/tomato.jpg" class="left-img">
+	<h1>토마토</h1>
+	<p>토마토는 비타민A, C가 풍부하여 칼륨과 같은 각종 미네랄은 혈액의 산성도를 낮추는 역할을 해주며 혈압을 내리고 혈관을 튼튼하게 해준다. 토마토에 들어있는 피코펜이라는 성분은 뛰어난 항암 작용을 보이며 잘 알려져 있듯이 블루베리와 함께 대표적인 항산화 음식이기도 하다.</p>
+    <div class="box1">박스1</div>
+    <div class="box2">박스2</div>
+    <div class="box3">박스3</div>
+    <div class="box4">박스4</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    
+    <div class="box5">박스5</div>
+    <div class="box6">박스6</div>
+    <div class="box7">박스7</div>
+    <div class="box8">박스8</div>
+    <br>
+    <div id="wrapper">
+        <div class="box" id="b1">1</div>
+        <div class="box" id="b2">2</div>
+        <div class="box" id="b3">3</div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+        <div class="ttt1">2단레이아웃1</div>
+        <div class="ttt2">2단레이아웃2</div>
+        <div class="ttt3">2단레이아웃3</div>
+</body>
+</html>

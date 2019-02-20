@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>2단 레이아웃</title>
+    <style>
+            div {
+                border: 1px solid #ccc; /* 모든 영역에 테두리 표시 */
+            }
+            #container {
+                width:960px; /* 컨테이너 너비 */
+                padding:20px; /* 패딩 */			
+                margin:0 auto;  /* 화면 중앙에 배치 */
+            }
+            #header {
+                padding:20px;  /* 패딩 */
+                margin-bottom:20px;  /* 아래 요소들과의 간격(마진) */
+            }
+            #contents {
+                width: 620px;  /* 너비 */
+                padding: 20px;  /* 패딩 */
+                float: left;  /* 왼쪽으로 플로팅 */
+                margin-bottom: 20px;  /* 아래 요소와의 간격 */
+            }
+            #sidebar {
+                width: 220px;  /* 너비 */
+                padding: 20px;  /* 패딩 */
+                float: right;  /* 오른쪽으로 플로팅 */
+                margin-bottom: 20px;  /* 아래 요소와의 간격 */
+                background:#eee;
+            }
+            #footer {
+                clear:both;  /* 양쪽 플로팅 해제 */
+                padding:20px;  /* 패딩 */
+            }
+        </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>사이트제목</h1>
+        </div>
+
+        <div id="sidebar">
+            <h2>사이드바</h2>
+            <ul>
+                    <li>위원은 탄핵 또는 금고 이상의 형의 선고에 의하지 아니하고는 파면되지 아니한다.</li>
+                    <li>예비비는 총액으로 국회의 의결을 얻어야 한다. 예비비의 지출은 차기국회의 승인을 얻어야 한다.</li>
+                    
+            </ul>
+        </div>
+
+        <div id="contents">
+            <h2>본문</h2>
+            <p>광물 기타 중요한 지하자원·수산자원·수력과 경제상 이용할 수 있는 자연력은 법률이 정하는 바에 의하여 일정한 기간 그 채취·개발 또는 이용을 특허할 수 있다. 모든 국민은 법률이 정하는 바에 의하여 국방의 의무를 진다. 대통령의 국법상 행위는 문서로써 하며, 이 문서에는 국무총리와 관계 국무위원이 부서한다. 군사에 관한 것도 또한 같다.</p>
+
+            <p>국회가 재적의원 과반수의 찬성으로 계엄의 해제를 요구한 때에는 대통령은 이를 해제하여야 한다. 지방의회의 조직·권한·의원선거와 지방자치단체의 장의 선임방법 기타 지방자치단체의 조직과 운영에 관한 사항은 법률로 정한다. 국회의원의 수는 법률로 정하되, 200인 이상으로 한다. 원장은 국회의 동의를 얻어 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다.</p>
+        </div>
+
+        <div id="footer">
+            <h2>푸터</h2>
+            <p>대통령은 조약을 체결·비준하고, 외교사절을 신임·접수 또는 파견하며, 선전포고와 강화를 한다.</p>
+        </div>
+
+    </div>
+</body>
+</html>
