@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.scit.accountBook.dao.accountBookMapper">
+	<insert id="insertAccountBook" parameterType="AccountBook">
+	insert into AccountBook(
+	accountseq,
+	id,
+	title,
+	content,
+	flag,
+	amount,
+	eventdate,
+	indate
+	)
+	values
+	(
+	seq_account.nextval,
+	#{id},
+	#{title},
+	#{content},
+	#{flag},
+	#{amount},
+	#{eventdate},
+	sysdate
+	)
+	</insert>
+	
+	<select id="selectAllAccount" resultType="AccountBook">
+	select 
+	accountseq,
+	id,
+	title,
+	content,
+	flag,
+	amount,
+	eventdate,
+	indate
+	from AccountBook
+	order by accountseq	
+	</select>
+</mapper>

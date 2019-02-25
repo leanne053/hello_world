@@ -35,7 +35,7 @@
 			content+="Total: "+total+"Average: "+(total/array)
 			
 			$("#people").html(content);
-		}
+		});
 		$("#pop").on("click",function(){
 			array.pop();
 			listAll();
@@ -44,9 +44,8 @@
 			$("#shift").on("click",function(){
 			array.shift();
 				listAll();
-				}
+				});
 			//맨앞에 있는 값을 제외함.
-		});
 	});
 </script>
 </head>
