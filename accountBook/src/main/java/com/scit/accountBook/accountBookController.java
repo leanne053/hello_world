@@ -28,4 +28,5 @@ public class accountBookController {
 		model.addAttribute("bLst",bList);
 		return "writeAccount";
 	}
+	
 }

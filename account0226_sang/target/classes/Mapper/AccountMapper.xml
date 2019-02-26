@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 게시판 처리 SQL -->
+<mapper namespace="com.scit.sangaccount.dao.AccountMapper">
+	<insert id="insertMember" parameterType="Member">
+	insert into Accountowner
+	(id, pw)
+	values
+	(#{id}, #{pw})
+	</insert>
+	
+	<select id="selectMember" parameterType="Member" resultType="Member">
+	select
+	id,
+	pw
+	from 
+	accountowner
+	where
+	id=#{id}
+	and
+	pw=#{pw}
+	</select>
+	
+	<insert id="insertAccount" parameterType="Account">
+	insert into accountbook
+	(accountseq,
+	id,
+	title,
+	content,
+	flag,
+	amount,
+	eventdate,
+	indate
+	)
+	values
+	(seq_account.nextval
+	#{id},
+	#{title},
+	#{content},
+	#{flag},
+	#{amount},
+	#{eventdate},
+	sysdate
+	)
+	</insert>
+	
+	<select id="selectAccount" resultType="Account" parameterType="String">
+	select
+	id,
+	pw
+	from 
+	accountowner
+	where
+	id=#{id}
+	</select>
+</mapper>

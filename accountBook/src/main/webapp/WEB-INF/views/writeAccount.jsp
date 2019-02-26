@@ -14,7 +14,29 @@
 	</style>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+	<script>
+	$(function(){
+		inite();
+		
+		
+		function inite(){
+			(#input).on('input',function(index,input){
+				var content;
+				var income;
+				var spending;
+				
+				content+='<tr><td>'
+				
+			});
+			
+		}
+		
+		
+		
+	})
 	
+	
+	</script>
 <body>
 <h1>
 	 가계부 작성
@@ -22,7 +44,7 @@
 		<c:forEach var="accountBook" items="${bList}">
 	<table>
 		<tr>
-		<th>no.</th><th>손/이득구분</th><th>title</th><th>손/수익내용</th><th>손/수익금액</th><th>손/수익일어난시점</th><th>등록</th>
+		<th>no.</th><th>손/이득구분</th><th>title</th><th>손/수익내용</th><th>손/수익금액</th><th>손/수익일어난시점</th><th>등록일</th>
 		</tr>
 		<tr>
 		<td>accountBook.accountseq</td>
