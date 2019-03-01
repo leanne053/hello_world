@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+		<typeAlias type="com.scit.account2.vo.Member" alias="Member" />
+		<typeAlias type="com.scit.account2.vo.Account" alias="Account" />
+	</typeAliases>
+	<mappers>
+		<mapper resource="Mapper/AccountMapper.xml"/>
+	</mappers>
+</configuration>

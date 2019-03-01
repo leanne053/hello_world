@@ -10,7 +10,7 @@
 	$(function(){
 		init();
 		$("#register").on("click",buttonEvent);
-	};
+	});
 	
 	function init()({
 		callList();
