@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+  //  var output='';
+  //  for(var key in window){
+  //      output+='●'+ key+':'+window[key]+'\n';
+  //  }
+  //  alert(output);
+  var audio = new Audio();
+  audio.src= 'C:\Users\SCIT Master\Music\Rain.mp3';
+    </script>
+</head>
+<body>
+    <button onclick="audio.play()">PLAY</button>
+    <button onclick="audio.pause()">PAUSE</button>
+    <input type="number" onchange="audio.currentTime=this.value"/>
+    <input type="number" onchange="audio.volume=this.value"/>
+</body>
+</html>
