@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index</title>
+    <script>
+        window.onload = function(){
+            var header = document.getElementById('header');
+
+            header.onclick=function(){
+                alert('click');
+
+                header.onclick=null;
+            
+        };
+        }
+</script>
+</head>
+<body>
+  <h1 id="header">Click</h1>
+</body>
+</html>
