@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>index</title>
+    <script>
+        window.onload = function(){
+          var buttonA = document.getElementById('buttonA');
+          var buttonB = document.getElementById('buttonB');
+          var counterA = document.getElementById('counterA');
+          var counterB = document.getElementById('counterB');
+          buttonA.onclick = function(){
+            counterA.innerHTML =Number(counterA.innerHTML)+1; 
+          };
+          buttonB.onclick = function(){
+            // counterA.innerHTML =Number(counterA.innerHTML) +1;
+            counterB.innerHTML =Number(counterB.innerHTML) +1;
+            buttonA.onclick();
+          };
+        }
+</script>
+</head>
+<body>
+  <h1>버튼A: <span id="counterA">0</span></h1>
+  <h1>버튼B: <span id="counterB">0</span></h1>
+  <button id= "buttonA">buttonA</button>
+  <button id= "buttonB">buttonB</button>
+</body>
+</html>
