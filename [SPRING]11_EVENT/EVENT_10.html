@@ -10,6 +10,17 @@
         document.getElementById('paragraph').onclick= function(){
           alert('paragraph');
         }
+        document.getElementById('paragraph').onclick = function(e){
+          var event = e || window.event;
+
+          alert('go!');
+
+          event.cancelBubble = true;
+          if(event.stopPropagation){
+            event.stopImmediatePropagation();
+          }
+
+        }
       }
     </script>    
 </head>
