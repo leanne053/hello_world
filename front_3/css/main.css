@@ -1,0 +1,24 @@
+#gamearea{
+    position:absolute;
+    /* background:white; */
+    width:100%;
+    height:100%;
+    border:outset;
+    top:0;
+    left:0;
+   overflow:hidden;
+  }
+  .dot{
+    position:absolute;
+    width:20px;
+    height:20px;
+    border-radius:100%;
+    opacity:.8;
+  }
+  .square{
+      position:absolute;
+      width:20px;
+      height:20px;
+      border-radius:0%;
+      opacity:.8;
+    }
