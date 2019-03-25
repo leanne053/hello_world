@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+    <meata charset="utf-8">
+    <title>font unit - em </title>
+    <style>
+        html {
+            font-size: 20px;
+        }
+        div {
+            font-size: 30px;
+            font-size: 1.5rem;
+        }
+        /* rem의 한계점
+        rem 단위는 모던 브라우저에서만 인식하고 오래된 인터넷 익스플로러 버전에서는 인식하지 못함.
+        따라서 px 단위와 함께 사용해서 해결할 수 있다. */
+    </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>1.5em 크기의 텍스트
+                <div>1.5em 크기의 텍스트
+                    <div>1.5em 크기의 텍스트</div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
+</html>
