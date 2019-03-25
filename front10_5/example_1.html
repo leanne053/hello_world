@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-wdidth; init-scale=1.0; user-scaclable=no">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Courgette');
+
+        #content {
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        }
+        h1 {
+        color:#aff500;
+        font-family: 'Courgette', cursive;
+        font-size:7em;				
+        font-style:italic;				
+        text-shadow:2px 2px 3px #222, 2px 2px 3px black;
+        }
+    
+    
+    </style>
+    </head>
+	<body>
+        <div id="content">
+            <h1>Startup Company</h1>
+        </div>
+
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/jquery.backstretch.min.js"></script>
+        <script>
+            $(function(){
+                $.backstretch(["images/office-1.jpg", "images/office-2.jpg","images/office-3.jpg"],{duration:3500,fade:750});
+            });        
+        </script>
+    </body>
+    </html>
