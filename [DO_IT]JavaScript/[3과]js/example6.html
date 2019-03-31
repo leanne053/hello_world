@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var month = prompt("현재는 몇 월입니까?","0");
+        if(month>=3 && month<=5){
+            document.write("현재 계절이 봄이군요");
+        } else if(month>=6 && month<=8){
+            document.write("현재 계절이 여름이군요");
+        } else if(month>=9 && month<=11){
+            document.write("현재 계절이 가을이군요");
+        } else if((month>=1 && month<=2)||month==12){
+            document.write("현재 계절이 겨울이군요.");
+        } else{
+            document.write("입력이 잘못됐습니다.");
+        }
+    
+    </script>
+</body>
+</html>

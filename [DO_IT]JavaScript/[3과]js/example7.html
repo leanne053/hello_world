@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var id = "abc111";
+        var password = "abb111";
+
+        var question1 = prompt("아이디를 입력하세요","");
+        if(id!=question1){
+            alert("id 가 일치하지 않습니다");
+        }
+        var question2 = prompt("비밀번호를 입력하세요","");
+
+        
+        if(id == question1){
+            if(password == question2){
+                document.write(id+"님 로그인됐습니다.");
+            } else {
+                alert("비밀번호가 일치하지 않습니다.");
+                location.reload();
+            }
+        } else {
+            alert("id가 일치하지 않습니다");
+            location.reload();
+        }
+    
+    </script>
+</body>
+</html>
