@@ -1,0 +1,9 @@
+body{
+background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+/* linear-gradient(45deg, #31baec 0%, #1f4ea0 59    %, #bc218f 100%); */
+/* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
+/* background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); */
+/* background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%); */
+/* background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%); */
+/* background-image: linear-gradient(to right, #ff9fa2 0%, #eeeeee 100%); */
+}

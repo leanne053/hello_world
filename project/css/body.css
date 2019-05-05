@@ -1,0 +1,16 @@
+body{
+    overflow: hidden;
+}
+
+#pane, #pane1 {
+    position: absolute;
+    padding: 0;
+    z-index: 99;
+    border: 2px solid yellow;
+    background: #fefefe;
+    width: 50%;
+    height: 40%;
+}
+#title, #title1 {
+    height: 20px;
+}
